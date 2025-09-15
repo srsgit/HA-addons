@@ -18,9 +18,10 @@ arch:
   - armv7
 init: false
 map:
-  - share:rw
-  - ssl
-  - data
+  - type: share
+    read_only: False
+  - type: ssl
+  - type: data
     read_only: False
     path: /mnt/data/supervisor/addons/data/a0d7b954_influxdb
 ports:
