@@ -1,0 +1,7 @@
+---
+channel: stable
+addons:
+  influxdb:
+    repository: srsgit-addons/addon-influxdb
+    target: influxdb
+    image: ghcr.io/srsgit/influxdb/{arch}
