@@ -3,7 +3,7 @@ name: InfluxDB
 version: dev
 slug: influxdb
 description: Scalable datastore for metrics, events, and real-time analytics
-url: https://github.com/srsgit/addon-influxdb
+url: https://github.com/srsgit/ha-addons/influxdb
 codenotary: codenotary@frenck.dev
 ingress: true
 ingress_port: 1337
@@ -20,6 +20,9 @@ init: false
 map:
   - share:rw
   - ssl
+  - data
+    read_only: False
+    path: /mnt/data/supervisor/addons/data/a0d7b954_influxdb
 ports:
   80/tcp: null
   8086/tcp: 8086
