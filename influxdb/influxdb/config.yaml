@@ -10,7 +10,7 @@ ingress_port: 1337
 ingress_stream: true
 panel_icon: mdi:chart-areaspline
 startup: services
-homeassistant: 0.92.0b4
+homeassistant: 0.92.0b5
 hassio_api: true
 arch:
   - aarch64
@@ -23,7 +23,6 @@ map:
   - type: ssl
   - type: data
     read_only: False
-    path: /mnt/data/supervisor/addons/data/a0d7b954_influxdb
 ports:
   80/tcp: null
   8086/tcp: 8086
