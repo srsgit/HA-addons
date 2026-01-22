@@ -1,5 +1,5 @@
 name: InfluxDB
-version: 5.0.2b
+version: 5.0.4
 slug: influxdb
 description: Scalable datastore for metrics, events, and real-time analytics
 url: https://github.com/srsgit/HA-addons/tree/main/influxdb
@@ -26,6 +26,8 @@ ports_description:
   8086/tcp: InfluxDB server
   8088/tcp: RPC service for backup and restore
 auth_api: true
+ulimits:
+  nofile: 65535
 options:
   auth: true
   reporting: true
