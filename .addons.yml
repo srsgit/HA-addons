@@ -2,6 +2,10 @@
 channel: stable
 addons:
   influxdb:
-    repository: influxdb
+    repository: srsgit/influxdb
     target: influxdb
     image: ghcr.io/srsgit/influxdb/{arch}
+  grafana:
+    repository: srsgit/grafana-addon
+    target: .
+    image: ghcr.io/srsgit/{arch}-grafana-addon
